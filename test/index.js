@@ -1,5 +1,7 @@
 const Graph = require('../src/index');
 
+
+
 new Graph().draw();
 
 const graph2 = new Graph()
