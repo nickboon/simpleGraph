@@ -17,13 +17,16 @@ class Figure {
 
     setColour(colour) {
         this.colour = colour;
-        this.figures.forEach(f => f.colour = colour);
+        this.figures.forEach(f => f.setColour(colour));
+
+        console.log('in setColour', this.figures);
+
         return this;
     }
 
     setOpacity(opacity) {
         this.opacity = opacity;
-        this.figures.forEach(f => f.opacity = opacity);
+        this.figures.forEach(f => f.setOpacity(opacity));
         return this;
     }
 
