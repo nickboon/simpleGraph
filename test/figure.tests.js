@@ -38,6 +38,13 @@ test('ParentFigure.setOpacity()', assert => {
     assert.end();
 });
 
+test('ParentFigure.label()', assert => {
+    assert.doesNotThrow(
+        () => new Subclass1().label(),
+        'should not throw.'
+    );
+    assert.end();
+});
 
 class Subclass1 extends Sut {
     constructor(colour, opacity) {

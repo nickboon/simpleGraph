@@ -26,6 +26,11 @@ class Figure {
         this.figures.forEach(f => f.opacity = opacity);
         return this;
     }
+
+    label() {
+        this.figures.forEach(f => f.label());
+        return this;
+    }
 }
 
 module.exports = Figure;
