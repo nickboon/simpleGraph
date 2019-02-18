@@ -37,10 +37,7 @@ test('new Graph().setColour(colour).setFigures(figures).svg', assert => {
                 'width="undefined" height="undefined"'
             ].join(''),
             '>', [
-                '<text x="undefined" y="undefined" fill="undefined" opacity="undefined>', [
-                    'undefined undefined',
-                ].join(''),
-                '</text>'
+                '<text x="0" y="0" fill="undefined" opacity="undefined>0 0</text>'
             ].join(''),
             '</svg>'
         ].join(''),
