@@ -8,19 +8,14 @@ class Figure {
     get elements() {
         const result = [];
         this.figures.forEach(f => result.push(...f.elements));
-
         if (this.element)
             result.push(this.element);
-
         return result;
     }
 
     setColour(colour) {
         this.colour = colour;
         this.figures.forEach(f => f.setColour(colour));
-
-        console.log('in setColour', this.figures);
-
         return this;
     }
 
