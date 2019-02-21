@@ -25,7 +25,7 @@ test('new Graph().svg', assert => {
 test('new Graph().setColour(colour).setFigures(figures).svg', assert => {
     assert.true(
         new Sut().setColour('black').setFigures([new Point().label()]).svg
-        .includes('<text x="0" y="0" fill="undefined" opacity="undefined>0 0</text>'),
+        .includes('<text x="0" y="0" fill="undefined" opacity="undefined">0 0</text>'),
         'should add figures to the returned SVG string.'
     );
     assert.end();

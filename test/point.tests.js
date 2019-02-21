@@ -22,7 +22,7 @@ test('new Point().label().element', assert => {
 test('new Point().setColour(colour).label()element()', assert => {
     assert.deepEqual(
         new Sut(1, 2).setColour('red').label().elements[0](),
-        '<text x="1" y="2" fill="red" opacity="undefined>1 2</text>',
+        '<text x="1" y="2" fill="red" opacity="undefined">1 2</text>',
         'should return expected element.'
     );
     assert.end();
